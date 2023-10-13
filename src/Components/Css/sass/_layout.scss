@@ -1,0 +1,1037 @@
+//Header
+.Header {
+    background-color: $principal-normal;
+    padding: 80px 0 50px 0;
+}
+
+.nav {
+    padding: 20px 0px;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title-header {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        font-size: 38;
+    }
+
+    h3 {
+        font-size: 26;
+    }
+}
+
+
+.input-seach {
+    margin-top: 40px;
+    border: none;
+    outline: 'none';
+
+
+    .label-search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .seach-bar {
+        margin-top: 12px;
+        display: block;
+        border-radius: 1em;
+        text-align: center;
+        border: none;
+        outline: none;
+        color: $principal-normal;
+        min-width: 100px;
+        height: 40px;
+        font-size: 20px;
+
+    }
+}
+
+
+//Title Pokedex Header
+
+.Title-Pokedex {
+    height: 60px;
+    background-color: $black-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pokedex-grid {
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+@media (max-width: 940px) {
+
+    .pokedex-grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+
+
+.pokemon-image-container {
+    padding: 0px 5px;
+
+}
+
+.pokemon-card {
+    display: flex;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px 10px 0px;
+    flex: 1px
+}
+
+.card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+}
+
+
+.card-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.pokemon-type {
+
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+
+.pokemon-heart {
+    width: 20px;
+    cursor: pointer;
+    border-style: none;
+    background-color: transparent;
+}
+
+.card-type {
+    display: flex;
+
+}
+
+
+.Filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    button{
+        margin: 0 2px;
+    }
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    align-items: center;
+
+    button{
+        display: flex;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        border-style: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+
+    p {
+        margin-top: 20px;
+        color: $gray-1;
+        font-size: 20px;
+    }
+}
+
+.pagination-pageAndTotalPages {
+    margin: 0 10px;
+}
+
+
+.water {
+    border: solid $water;
+    border-radius: 10px;
+    background-color: $water;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.fire {
+    border: solid $fire;
+    border-radius: 10px;
+    background-color: $fire;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.dragon {
+    border: solid $dragon;
+    border-radius: 10px;
+    background-color: $dragon;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.flying {
+    border: solid $flying;
+    border-radius: 10px;
+    background-color: $flying;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.rock {
+    border: solid $rock;
+    border-radius: 10px;
+    background-color: $rock;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.ice {
+    border: solid $ice;
+    border-radius: 10px;
+    background-color: $ice;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.dark {
+    border: solid $dark;
+    border-radius: 10px;
+    background-color: $dark;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.ghost {
+    border: solid $ghost;
+    border-radius: 10px;
+    background-color: $ghost;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.stell {
+    border: solid $stell;
+    border-radius: 10px;
+    background-color: $stell;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.psychic {
+    border: solid $psyic;
+    border-radius: 10px;
+    background-color: $psyic;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.grass {
+    border: solid $grass;
+    border-radius: 10px;
+    background-color: $grass;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.electric {
+    border: solid $eletric;
+    border-radius: 10px;
+    background-color: $eletric;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.poison {
+    border: solid $poison;
+    border-radius: 10px;
+    background-color: $poison;
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.bug {
+    border: solid $bug;
+    border-radius: 10px;
+    background-color: $bug;
+    display: block;
+
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.ground {
+    border: solid $ground;
+    border-radius: 10px;
+    background-color: $ground;
+    display: block;
+
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+.normal {
+    border: solid $normal;
+    border-radius: 10px;
+    background-color: $normal;
+    display: block;
+
+
+    p {
+        color: #ffffff;
+        font-size: 10px;
+    }
+}
+
+//Pokemon Page
+
+.container-pokemon-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ;
+
+}
+
+.pokemon-card-page {
+    max-width: 1200px;
+
+}
+
+.logo-page {
+    margin: 40px 0px;
+}
+
+
+
+.Header-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: $gray-4;
+        font-weight: 500;
+        margin: 0 80px;
+    }
+
+    h3 {
+        color: $gray-4;
+        font-weight: 500;
+
+    }
+}
+
+.top-card-page {
+    display: flex;
+    h1{
+        text-transform: capitalize;
+    }
+    a{
+        display: flex;
+    }
+}
+
+.button-page {
+    width: 80px;
+    cursor: pointer;
+    border-style: none;
+    background-color: transparent;
+}
+
+.container-page-principal {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    justify-content: space-around;
+    min-height: fit-content;
+
+    @media screen and (max-width:1000px) {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+
+.pokemon-types-page {
+    margin-top: 4px;
+    h3 {
+        color: $gray-4;
+        font-weight: 500;
+    }
+    @media screen and (max-width:1000px) {
+        h3{
+            color: #6D6E70;
+            display: flex;
+            font-weight: 500;
+            justify-content: center;
+        }
+
+    }
+}
+
+.pokemon-image-container-page {
+    margin: 0 auto;
+    align-self: center;
+
+}
+
+.img-pokemon-page {
+    width: 300px;
+    border: solid .5px $gray-4;
+    border-radius: 10em;
+    margin: 0 60px;
+    margin-top: 40px;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+
+    h3 {
+        color: $gray-4;
+        font-size: 26px;
+
+        margin-top: 20px;
+    }
+    h4 {
+        color: $gray-4;
+        font-size: 20px;
+
+        margin-bottom: 10px;
+    }
+}
+
+.column-1-page{
+    margin-right: 20px;
+
+}
+.ball{
+    position:absolute;
+    left: 4%;
+    height: 15px;
+    width: 15px;
+    background: white;
+    border-radius: 1em;
+
+}
+
+
+
+.first-cardgrass{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $grass;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+
+
+
+.second-cardpoison{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $poison;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.first-cardpoison{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $poison;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+
+
+
+.second-cardgrass{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $grass;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.first-cardnormal{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $normal;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+
+
+
+.second-cardground{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $ground;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.first-cardfairy{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $fairy;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+.first-cardfire{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $fire;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+.first-cardbug{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bug;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+.first-cardground{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bug;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+.first-cardwater{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $water;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+.first-cardfighting{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $fighting;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+.first-cardpsychic{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $psyic;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+.first-cardrock{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $rock;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+.first-cardelectric{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $eletric;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+.first-cardghost{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $ghost;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+.first-carddragon{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dragon;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+
+.first-cardice{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $ice;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+.first-carddark{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+.first-cardsteel{
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $stell;
+    p{color: white;
+    font-size: 20px;}
+    border-radius: 0.8em;
+
+}
+
+
+.second-cardfire{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $fire;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-carddragon{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dragon;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-cardrock{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $rock;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-cardelectric{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $eletric;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-cardfairy{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $fairy;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-cardflying{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $flying;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-cardfighting{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $fighting;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-cardpsychic{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $psyic;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-cardsteel{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $stell;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-cardice{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $ice;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-cardwater{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $water;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-cardghost{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $ghost;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-carddark{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+.second-cardbug{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bug;
+    p{color: white;
+        font-size: 20px;}
+    border-radius: 0.8em;
+}
+
+//footer
+
+.footer-page{
+    margin-top: 40px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    h3 {
+        color: $gray-4;
+        font-size: 26px;
+
+        margin-top: 10px;
+    }
+    h4 {
+        color: $gray-4;
+        font-size: 20px;
+
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width:1000px) {
+        align-items: center;
+    }
+}
+
+.footer-column-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.column-footer-1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.column-footer-1-right{
+    margin-right: 110px;
+    width: 100px;
+}
+.column-footer-1-left{
+    
+    width: 200px;
+}
+
+.header-footer-right{
+    display: flex;
+    justify-content: center;
+}

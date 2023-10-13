@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './Components/Css/style.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Path } from './Path';
+import { PokemonProvider } from './contexts/PokemonProvider';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <PokemonProvider>
+    <Path />
+    </PokemonProvider>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

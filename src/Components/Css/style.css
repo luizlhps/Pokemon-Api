@@ -1,0 +1,1086 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4DDCFF;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #6D6E70;
+}
+
+.Header {
+  background-color: #263238;
+  padding: 80px 0 50px 0;
+}
+
+.nav {
+  padding: 20px 0px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-header {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title-header h2 {
+  font-size: 38;
+}
+.title-header h3 {
+  font-size: 26;
+}
+
+.input-seach {
+  margin-top: 40px;
+  border: none;
+  outline: "none";
+}
+.input-seach .label-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-seach .seach-bar {
+  margin-top: 12px;
+  display: block;
+  border-radius: 1em;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #263238;
+  min-width: 100px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.Title-Pokedex {
+  height: 60px;
+  background-color: #15171A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pokedex-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 940px) {
+  .pokedex-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.pokemon-image-container {
+  padding: 0px 5px;
+}
+
+.pokemon-card {
+  display: flex;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0px;
+  flex: 1px;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-top p {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokemon-type {
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+
+.pokemon-heart {
+  width: 20px;
+  cursor: pointer;
+  border-style: none;
+  background-color: transparent;
+}
+
+.card-type {
+  display: flex;
+}
+
+.Filtros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.Filtros button {
+  margin: 0 2px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  align-items: center;
+}
+.pagination-container button {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+}
+.loading p {
+  margin-top: 20px;
+  color: #3E3F40;
+  font-size: 20px;
+}
+
+.pagination-pageAndTotalPages {
+  margin: 0 10px;
+}
+
+.water {
+  border: solid #6890f0;
+  border-radius: 10px;
+  background-color: #6890f0;
+  display: block;
+}
+.water p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.fire {
+  border: solid #f08030;
+  border-radius: 10px;
+  background-color: #f08030;
+  display: block;
+}
+.fire p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.dragon {
+  border: solid #7038f8;
+  border-radius: 10px;
+  background-color: #7038f8;
+  display: block;
+}
+.dragon p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.flying {
+  border: solid #a890f0;
+  border-radius: 10px;
+  background-color: #a890f0;
+  display: block;
+}
+.flying p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.rock {
+  border: solid #93802d;
+  border-radius: 10px;
+  background-color: #93802d;
+  display: block;
+}
+.rock p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.ice {
+  border: solid #45B6B6;
+  border-radius: 10px;
+  background-color: #45B6B6;
+  display: block;
+}
+.ice p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.dark {
+  border: solid #362A23;
+  border-radius: 10px;
+  background-color: #362A23;
+  display: block;
+}
+.dark p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.ghost {
+  border: solid #413359;
+  border-radius: 10px;
+  background-color: #413359;
+  display: block;
+}
+.ghost p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.stell {
+  border: solid #b8b8d0;
+  border-radius: 10px;
+  background-color: #b8b8d0;
+  display: block;
+}
+.stell p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.psychic {
+  border: solid #f61c5d;
+  border-radius: 10px;
+  background-color: #f61c5d;
+  display: block;
+}
+.psychic p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.grass {
+  border: solid #78c850;
+  border-radius: 10px;
+  background-color: #78c850;
+  display: block;
+}
+.grass p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.electric {
+  border: solid #f8d030;
+  border-radius: 10px;
+  background-color: #f8d030;
+  display: block;
+}
+.electric p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.poison {
+  border: solid #803380;
+  border-radius: 10px;
+  background-color: #803380;
+  display: block;
+}
+.poison p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.bug {
+  border: solid #616B13;
+  border-radius: 10px;
+  background-color: #616B13;
+  display: block;
+}
+.bug p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.ground {
+  border: solid #AA8623;
+  border-radius: 10px;
+  background-color: #AA8623;
+  display: block;
+}
+.ground p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.normal {
+  border: solid #8a8a59;
+  border-radius: 10px;
+  background-color: #8a8a59;
+  display: block;
+}
+.normal p {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.container-pokemon-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-card-page {
+  max-width: 1200px;
+}
+
+.logo-page {
+  margin: 40px 0px;
+}
+
+.Header-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.Header-page h1 {
+  color: #6D6E70;
+  font-weight: 500;
+  margin: 0 80px;
+}
+.Header-page h3 {
+  color: #6D6E70;
+  font-weight: 500;
+}
+
+.top-card-page {
+  display: flex;
+}
+.top-card-page h1 {
+  text-transform: capitalize;
+}
+.top-card-page a {
+  display: flex;
+}
+
+.button-page {
+  width: 80px;
+  cursor: pointer;
+  border-style: none;
+  background-color: transparent;
+}
+
+.container-page-principal {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  justify-content: space-around;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+@media screen and (max-width: 1000px) {
+  .container-page-principal {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pokemon-types-page {
+  margin-top: 4px;
+}
+.pokemon-types-page h3 {
+  color: #6D6E70;
+  font-weight: 500;
+}
+@media screen and (max-width: 1000px) {
+  .pokemon-types-page h3 {
+    color: #6D6E70;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+  }
+}
+
+.pokemon-image-container-page {
+  margin: 0 auto;
+  align-self: center;
+}
+
+.img-pokemon-page {
+  width: 300px;
+  border: solid 0.5px #6D6E70;
+  border-radius: 10em;
+  margin: 0 60px;
+  margin-top: 40px;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+}
+.column h3 {
+  color: #6D6E70;
+  font-size: 26px;
+  margin-top: 20px;
+}
+.column h4 {
+  color: #6D6E70;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.column-1-page {
+  margin-right: 20px;
+}
+
+.ball {
+  position: absolute;
+  left: 4%;
+  height: 15px;
+  width: 15px;
+  background: white;
+  border-radius: 1em;
+}
+
+.first-cardgrass {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #78c850;
+  border-radius: 0.8em;
+}
+.first-cardgrass p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardpoison {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #803380;
+  border-radius: 0.8em;
+}
+.second-cardpoison p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardpoison {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #803380;
+  border-radius: 0.8em;
+}
+.first-cardpoison p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardgrass {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #78c850;
+  border-radius: 0.8em;
+}
+.second-cardgrass p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardnormal {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8a8a59;
+  border-radius: 0.8em;
+}
+.first-cardnormal p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardground {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #AA8623;
+  border-radius: 0.8em;
+}
+.second-cardground p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardfairy {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e07d9e;
+  border-radius: 0.8em;
+}
+.first-cardfairy p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardfire {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f08030;
+  border-radius: 0.8em;
+}
+.first-cardfire p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardbug {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #616B13;
+  border-radius: 0.8em;
+}
+.first-cardbug p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardground {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #616B13;
+  border-radius: 0.8em;
+}
+.first-cardground p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardwater {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6890f0;
+  border-radius: 0.8em;
+}
+.first-cardwater p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardfighting {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #811d1d;
+  border-radius: 0.8em;
+}
+.first-cardfighting p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardpsychic {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f61c5d;
+  border-radius: 0.8em;
+}
+.first-cardpsychic p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardrock {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #93802d;
+  border-radius: 0.8em;
+}
+.first-cardrock p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardelectric {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8d030;
+  border-radius: 0.8em;
+}
+.first-cardelectric p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardghost {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #413359;
+  border-radius: 0.8em;
+}
+.first-cardghost p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-carddragon {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7038f8;
+  border-radius: 0.8em;
+}
+.first-carddragon p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardice {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #45B6B6;
+  border-radius: 0.8em;
+}
+.first-cardice p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-carddark {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #362A23;
+  border-radius: 0.8em;
+}
+.first-carddark p {
+  color: white;
+  font-size: 20px;
+}
+
+.first-cardsteel {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b8b8d0;
+  border-radius: 0.8em;
+}
+.first-cardsteel p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardfire {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f08030;
+  border-radius: 0.8em;
+}
+.second-cardfire p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-carddragon {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7038f8;
+  border-radius: 0.8em;
+}
+.second-carddragon p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardrock {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #93802d;
+  border-radius: 0.8em;
+}
+.second-cardrock p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardelectric {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8d030;
+  border-radius: 0.8em;
+}
+.second-cardelectric p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardfairy {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e07d9e;
+  border-radius: 0.8em;
+}
+.second-cardfairy p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardflying {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a890f0;
+  border-radius: 0.8em;
+}
+.second-cardflying p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardfighting {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #811d1d;
+  border-radius: 0.8em;
+}
+.second-cardfighting p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardpsychic {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f61c5d;
+  border-radius: 0.8em;
+}
+.second-cardpsychic p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardsteel {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b8b8d0;
+  border-radius: 0.8em;
+}
+.second-cardsteel p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardice {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #45B6B6;
+  border-radius: 0.8em;
+}
+.second-cardice p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardwater {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6890f0;
+  border-radius: 0.8em;
+}
+.second-cardwater p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardghost {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #413359;
+  border-radius: 0.8em;
+}
+.second-cardghost p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-carddark {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #362A23;
+  border-radius: 0.8em;
+}
+.second-carddark p {
+  color: white;
+  font-size: 20px;
+}
+
+.second-cardbug {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #616B13;
+  border-radius: 0.8em;
+}
+.second-cardbug p {
+  color: white;
+  font-size: 20px;
+}
+
+.footer-page {
+  margin-top: 40px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+}
+.footer-page h3 {
+  color: #6D6E70;
+  font-size: 26px;
+  margin-top: 10px;
+}
+.footer-page h4 {
+  color: #6D6E70;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .footer-page {
+    align-items: center;
+  }
+}
+
+.footer-column-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-footer-1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.column-footer-1-right {
+  margin-right: 110px;
+  width: 100px;
+}
+
+.column-footer-1-left {
+  width: 200px;
+}
+
+.header-footer-right {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

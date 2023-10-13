@@ -2,7 +2,7 @@
 
 ![Pokedex Demo](https://storage.googleapis.com/loustech-site.appspot.com/Pokedex-Demo.gif)
 
-Find your favorite Pokémon with ease using this web application! The Pokedex application is built using React and JavaScript, and it leverages data from the [PokeAPI](https://pokeapi.co/).
+Find your favorite Pokémon with ease using this web application! The Pokedex application is built using React and JavaScript, and it leverages data from the PokeAPI.
 
 ## Features
 

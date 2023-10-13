@@ -17,7 +17,7 @@ To run the application locally and take a closer look, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repo.git](https://github.com/luizlhps/Pokemon-Api
+git clone https://github.com/luizlhps/Pokemon-Api
 
 # Install dependencies
 npm install

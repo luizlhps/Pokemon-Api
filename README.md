@@ -1,6 +1,6 @@
 # Pokedex Find You Pokemon
 
-[!(https://firebasestorage.googleapis.com/v0/b/loustech-site.appspot.com/o/Pokedex-Demo.gif?alt=media&token=700ada15-0cad-450f-bd25-b6046c49bbcd)]
+[!(https://storage.googleapis.com/loustech-site.appspot.com/Pokedex-Demo.gif)]
 
 ## Available Scripts
 

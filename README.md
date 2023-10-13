@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Pokedex Find You Pokemon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[!(https://firebasestorage.googleapis.com/v0/b/loustech-site.appspot.com/o/Pokedex-Demo.gif?alt=media&token=700ada15-0cad-450f-bd25-b6046c49bbcd)]
 
 ## Available Scripts
 

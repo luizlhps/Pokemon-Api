@@ -4,6 +4,9 @@
 
 Find your favorite Pokémon with ease using this web application! The Pokedex application is built using React and JavaScript, and it leverages data from the PokeAPI.
 
+## Demo
+https://pokemon-api-flax.vercel.app/
+
 ## Features
 
 - Search for Pokémon by name or number.
